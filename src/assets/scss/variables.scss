@@ -1,0 +1,36 @@
+$background-dark: #0b0b0b;
+$background-light: #fff;
+$white: white;
+$black: #000;
+$link-color: #61dafb;
+
+
+
+// Define color variables
+$gradient1-start: #00fffb;
+$gradient1-mid1: #00e4ff;
+$gradient1-mid2: #00c6ff;
+$gradient1-mid3: #00a3ff;
+$gradient1-end1: #007bff;
+$gradient1-end2: #5764f3;
+$gradient1-end3: #7e46e1;
+$gradient1-end4: #9c0ac7;
+$gradient1-end5: #ba00b5;
+$gradient1-end6: #d000a2;
+$gradient1-end7: #e00091;
+$gradient1-end8: #ea1781;
+
+
+$gradient-text: linear-gradient(90deg, $gradient1-start 0%, $gradient1-end3 50.5%, $gradient1-end8 100%);
+$button-gradient: linear-gradient(to right, $gradient1-start, $gradient1-mid1, $gradient1-mid2, $gradient1-mid3, $gradient1-end1, $gradient1-end2, $gradient1-end3, $gradient1-end4, $gradient1-end5, $gradient1-end6, $gradient1-end7, $gradient1-end8);
+$underline-gradient: linear-gradient(to right, $gradient1-start, $gradient1-end1, $gradient1-end2, $gradient1-end3, $gradient1-end8);
+$navbar-active-gradient: linear-gradient(to right, $gradient1-start, $gradient1-end1, $gradient1-end2, $gradient1-end3, $gradient1-end8);
+$button-hover-gradient: linear-gradient(to right, $gradient1-end8, $gradient1-end7, $gradient1-end6, $gradient1-end5, $gradient1-end4, $gradient1-end3, $gradient1-end2, $gradient1-end1, $gradient1-mid3, $gradient1-mid2, $gradient1-mid1, $gradient1-start);
+$navbar-hover-gradient: linear-gradient(to right, $gradient1-start, $gradient1-end1, $gradient1-end2, $gradient1-end3, $gradient1-end8);
+
+
+
+$bottom-text-color: #FEAA4A;
+
+$feature-card-bg: linear-gradient(122deg, #242424 0%, #383838 100%);
+

@@ -1,0 +1,103 @@
+@import "../../../assets/scss/variables.scss";
+
+// Navbar styles
+
+.navbar-container {
+  padding: 40px;
+}
+
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+  font-family: "Inter-Medium", Helvetica;
+
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .responsive-logo {
+    height: auto;
+    width: 100%;
+    max-width: 150px; // Limit maximum size for larger screens
+  }
+
+  .nav-link {
+    color: $white;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .nav-link:hover {
+    background: $navbar-active-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    position: relative;
+
+    svg {
+      color: $gradient1-end3;
+    }
+  }
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    background: $navbar-active-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    position: relative;
+    font-weight: bold;
+
+    svg {
+      color: $gradient1-end3;
+    }
+  }
+
+  .nav-item {
+    gap: 10rem;
+  }
+
+  // Gradient Underline
+  .navbar-nav .nav-link.active::after,
+  .navbar-nav .nav-link.show::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: $underline-gradient;
+    border-radius: 2px;
+  }
+
+  &.separate-nav {
+    .nav-link {
+      color: $black;
+
+      svg {
+        color: $black;
+      }
+
+      &:hover {
+        svg {
+          color: $gradient1-end3;
+        }
+      }
+    }
+  }
+}
+
+.custom-offcanvas {
+  min-height: 350px !important;
+}
